@@ -1,7 +1,6 @@
-package com.yuesf.tech.lesson1.concurrent;
+package com.yuesf.tech.lesson1.synchronizer;
 
 import com.yuesf.tech.lesson1.ThreadTools;
-import org.junit.Test;
 
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;

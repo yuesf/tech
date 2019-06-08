@@ -34,10 +34,10 @@ public class DelayQueueDemo {
     private static void consumer(DelayQueue<Message> queue) {
         new Thread(() -> {
             while (true) {
-//                Message peek = queue.peek();
-//                if(null == peek){
-//                    return;
-//                }
+                //                Message peek = queue.peek();
+                //                if(null == peek){
+                //                    return;
+                //                }
 
                 try {
                     Message message = queue.remove();
@@ -51,6 +51,9 @@ public class DelayQueueDemo {
         }).start();
     }
 
+    /**
+     * 需要实现 Delayed 接口的方法
+     */
     private static class Message implements Delayed {
 
         private String body;
@@ -70,10 +73,9 @@ public class DelayQueueDemo {
         public int compareTo(Delayed delayed) {
             Message msg = (Message) delayed;
             return this.body.compareTo(msg.body);
-//            return Integer.valueOf(this.id) > Integer.valueOf(msg.id) ? 1
-//                    : (Integer.valueOf(this.id) < Integer.valueOf(msg.id) ? -1 : 0);
+            //            return Integer.valueOf(this.id) > Integer.valueOf(msg.id) ? 1
+            //                    : (Integer.valueOf(this.id) < Integer.valueOf(msg.id) ? -1 : 0);
         }
     }
-
 
 }

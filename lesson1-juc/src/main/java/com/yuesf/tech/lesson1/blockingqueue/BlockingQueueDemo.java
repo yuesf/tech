@@ -61,7 +61,7 @@ public class BlockingQueueDemo {
 
     public static long random() {
         Random random = new Random();
-        long nextLong = random.nextInt(1000);
+        long nextLong = random.nextInt(2000);
         return nextLong;
     }
 }
