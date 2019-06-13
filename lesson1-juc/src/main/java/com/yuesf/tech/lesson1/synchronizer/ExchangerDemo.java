@@ -17,6 +17,7 @@ public class ExchangerDemo {
         demo.thread(exchanger, "Thread-2");
         //若单着一个线程那么就会阻塞
 //        demo.thread(exchanger,"Thread-3");
+//        demo.thread(exchanger,"Thread-3");
 
     }
 

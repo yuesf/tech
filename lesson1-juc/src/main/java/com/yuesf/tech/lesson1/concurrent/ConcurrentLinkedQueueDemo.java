@@ -6,7 +6,7 @@ import com.yuesf.tech.lesson1.blockingqueue.BlockingQueueDemo;
 import java.util.concurrent.ConcurrentLinkedQueue;
 
 /**
- * 非阻塞队列
+ * 单向链表的非阻塞队列
  *
  * @author yuesf
  * @date 19/6/9

@@ -4,6 +4,7 @@ import com.yuesf.tech.lesson1.ThreadTools;
 import org.junit.Test;
 
 import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
@@ -23,7 +24,7 @@ public class CountDownLatchDemo {
     public void countdown() throws InterruptedException {
         CountDownLatch latch = new CountDownLatch(3);
 
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i <4; i++) {
             int idx = i;
             new Thread(() -> {
                 action(idx);

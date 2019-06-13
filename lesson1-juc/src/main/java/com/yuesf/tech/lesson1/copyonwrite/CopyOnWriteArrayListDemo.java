@@ -7,14 +7,15 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 /**
+ * 这里会比较 CopyOnWriteArrayList 与 ArrayList 的使用区别，区分并发场景下的使用
  * @author yuesf
  * @date 19/6/7
  */
 public class CopyOnWriteArrayListDemo {
     //当使用CopyOnWriteArrayList 稳定输出
-    List<String> list = new CopyOnWriteArrayList<>();
+//    List<String> list = new CopyOnWriteArrayList<>();
     //当使用ArrayList时会抛异常
-//    List<String> list = new ArrayList<>();
+    List<String> list = new ArrayList<>();
 
     public static void main(String[] args) {
 

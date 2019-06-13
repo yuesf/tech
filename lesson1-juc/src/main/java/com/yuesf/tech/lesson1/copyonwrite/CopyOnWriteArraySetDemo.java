@@ -19,7 +19,9 @@ public class CopyOnWriteArraySetDemo {
     Set<String> set = new CopyOnWriteArraySet<>();
     CopyOnWriteArrayList<String> list = new CopyOnWriteArrayList<>();
 
-
+    /**
+     * 通过 CopyOnWriteArraySet 实现并发线程
+     */
     @Test
     public void setDemo() {
 
